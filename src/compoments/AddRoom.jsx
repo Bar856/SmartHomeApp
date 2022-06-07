@@ -58,7 +58,7 @@ export default function Contact(props) {
       </div>
       
       {/* NAV */}
-      {navToHome && <Navigate replace to="/" />}
+      {navToHome && <Navigate replace to="/SmartHomeApp" />}
     </div>
   )
 }
