@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/SmartHomeApp/static/css/main.2ffc48b4.css",
+    "main.js": "/SmartHomeApp/static/js/main.fe686c7b.js",
+    "static/media/bg.jpg": "/SmartHomeApp/static/media/bg.0c68260d506a2e12c01a.jpg",
+    "index.html": "/SmartHomeApp/index.html",
+    "main.2ffc48b4.css.map": "/SmartHomeApp/static/css/main.2ffc48b4.css.map",
+    "main.fe686c7b.js.map": "/SmartHomeApp/static/js/main.fe686c7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ffc48b4.css",
+    "static/js/main.fe686c7b.js"
+  ]
+}
