@@ -20,7 +20,7 @@ export default function HomePage(props) {
       </div>
       
       {/* NAV */}
-      {navToAddRoom && <Navigate replace to="/AddRoom"/>}
+      {navToAddRoom && <Navigate replace to="/SmartHomeApp/AddRoom"/>}
     </div>
   )
 }

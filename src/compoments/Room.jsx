@@ -166,7 +166,7 @@ export default function Room(props) {
       </div>
       {/* NAV */}
       {<ToastContainer/>}
-      {navToHome && <Navigate replace to="/"/>}
+      {navToHome && <Navigate replace to="/SmartHomeApp"/>}
     </div>
   )
 }

@@ -31,7 +31,7 @@ function App() {
       <Header title="Smart Home"/>
         <Routes>
           <Route path='/SmartHomeApp' element={<HomePage getRoomLink={getRoomLink} setRoomSelected={setRoomSelected} rooms={rooms} />}/>
-          <Route path='/AddRoom' element={<AddRoom addRoomFn={addRoomFn}/>}/>
+          <Route path='/SmartHomeApp/AddRoom' element={<AddRoom addRoomFn={addRoomFn}/>}/>
           <Route path={getRoomLink()} element={<Room link={getRoomLink()} rooms={rooms} setRooms={setRooms} roomSelected={roomSelected}/>}/>
         </Routes>
       </Router>
