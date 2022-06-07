@@ -21,7 +21,7 @@ function App() {
   }
   const [roomSelected, setRoomSelected] = useState({})
   const getRoomLink = () =>{
-    return '/room/' + roomSelected.name
+    return '/SmartHomeApp/room/' + roomSelected.name
   }
   return (
     
@@ -30,7 +30,7 @@ function App() {
       <Navbar/>
       <Header title="Smart Home"/>
         <Routes>
-          <Route path='/' element={<HomePage getRoomLink={getRoomLink} setRoomSelected={setRoomSelected} rooms={rooms} />}/>
+          <Route path='/SmartHomeApp' element={<HomePage getRoomLink={getRoomLink} setRoomSelected={setRoomSelected} rooms={rooms} />}/>
           <Route path='/AddRoom' element={<AddRoom addRoomFn={addRoomFn}/>}/>
           <Route path={getRoomLink()} element={<Room link={getRoomLink()} rooms={rooms} setRooms={setRooms} roomSelected={roomSelected}/>}/>
         </Routes>
