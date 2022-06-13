@@ -10,7 +10,7 @@ export default function RoomSQ(props) {
     setNavToRoom(true);
   }
   return (
-    <div className='col-6'>
+    <div className='col'>
       <div onClick={goToRoom} style={{'backgroundColor':props.room.color}} className='roomSq white'>
         {props.room.name}
         <br/>

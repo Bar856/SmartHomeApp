@@ -29,12 +29,11 @@ export default function Contact(props) {
     props.addRoomFn(room);
     setNavToHome(true);
   }
-  
   return (
     <div className='container'>
       <div className='row'>
         <div className='row'>
-          <select className='margeTen' defaultValue={'DEFAULT'} name="selectRoomType" id="selectRoomType" onChange={(e)=>{setRoomType(e.target.value)}}>
+          <select style={{"width":"300px"}} className='margeTen' defaultValue={'DEFAULT'} name="selectRoomType" id="selectRoomType" onChange={(e)=>{setRoomType(e.target.value)}}>
             <option value="DEFAULT" disabled >Choose Room</option>
             <option value='BathRoom'>BathRoom</option>
             <option value='BedRoom'>BedRoom</option>
@@ -42,7 +41,7 @@ export default function Contact(props) {
           </select>
         </div>
         <div className='row'>
-          <input className='margeTen' type="text" placeholder='Room Name' maxLength={5} onChange={(e)=>{setRoomName(capitalizeFirstLetter(e.target.value))}}/>
+          <input style={{"width":"300px"}} className='margeTen' type="text" placeholder='Room Name' maxLength={5} onChange={(e)=>{setRoomName(capitalizeFirstLetter(e.target.value))}}/>
         </div>
         <div className='col'>
           <div className='row'>
@@ -53,10 +52,7 @@ export default function Contact(props) {
         <div className='col'>
           <input className='margeTen' type="button" value="Create" onClick={addRoom}/>   
         </div>
-        
-
       </div>
-      
       {/* NAV */}
       {navToHome && <Navigate replace to="/SmartHomeApp" />}
     </div>

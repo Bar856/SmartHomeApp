@@ -15,7 +15,7 @@ export default function Device(props) {
         <div>
           <h6>{props.name}</h6>
         </div>
-        <input className='margeTwo' onClick={turnOnOffDevice} type={'button'} value={props.state ? 'Turn off' : 'Turn on'}></input>
+        <input style={{"color":"green"}} className='margeTwo' onClick={turnOnOffDevice} type={'button'} value={props.state ? 'Turn off' : 'Turn on'}></input>
         <input className='margeTwo'  style={{color:'red'}} onClick={()=>props.deleteDevice(props.deviceNum)} type={'button'} value={'Delete'}></input>
       </div>
     </div>

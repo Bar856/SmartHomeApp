@@ -136,13 +136,13 @@ export default function Room(props) {
 
         </div>
         <div className='col margeTen'>
-          <input type={'button'} onClick={chukNumOfDevices} value='Add Device' />
+          <input className='bigButtons' type={'button'} onClick={chukNumOfDevices} value='Add Device' />
         </div>
         <div className='col margeTen'>
-          <input type={"button"} value="Back Home" onClick={()=>setNavToHome(true)} />
+          <input className='bigButtons' type={"button"} value="Back Home" onClick={()=>setNavToHome(true)} />
         </div>
         <div className='col margeTen'>
-          <input style={{color:'red'}} type={"button"} value="Delete Room" onClick={deleteRoom} />
+          <input className='bigButtons' style={{color:'red'}} type={"button"} value="Delete Room" onClick={deleteRoom} />
         </div>
       </div>
 
