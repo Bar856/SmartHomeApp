@@ -5,7 +5,7 @@ import { Navigate } from 'react-router';
 export default function Contact(props) {
   const [roomType, setRoomType] = useState('');
   const [roomName, setRoomName] = useState('');
-  const [roomColor, setRoomColor] = useState('');
+  const [roomColor, setRoomColor] = useState('black');
   const [navToHome, setNavToHome] = useState(false);
   const capitalizeFirstLetter = (n) => {return n.charAt(0).toUpperCase() + n.slice(1);}
   
